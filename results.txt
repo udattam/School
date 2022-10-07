@@ -286,8 +286,8 @@ Tree structure after undoing actions
     |-Workbook 2
     |-Workbook 3
    |-Lesson 3
- |-Dummy 1
  |-Dummy 2
+ |-Dummy 1
 ---------------------------------------
 Hashing every node
 Tree structure after hashing
