@@ -3,6 +3,7 @@ import java.util.*;
 public class DigitalSchool {
     Node root;
     ArrayList<Teacher> teachers;
+    ArrayList<Student> students;
     HashMap<String, Node> subjects;
     HashMap<Node, String> reverseSubjects;
     HashMap<Node, Node> parent;
@@ -10,6 +11,7 @@ public class DigitalSchool {
     public DigitalSchool() {
         root = new Node("Subjects");
         teachers = new ArrayList<Teacher>();
+        students = new ArrayList<Student>();
     }
 
     public void hashSubjects() {

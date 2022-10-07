@@ -2,6 +2,15 @@ Teachers:
 Teacher 1
 Teacher 2
 Teacher 3
+-------------------------------------------------------------------------------
+Students:
+Student 1 s1@gmail.com 1234567890
+Student 2 s2@gmail.com 2345678901
+Student 3 s3@gmail.com 3456789012
+Student 4 s4@gmail.com 4567890123
+Student 5 s5@gmail.com 5678901234
+Student 6 s6@gmail.com 6789012345
+-------------------------------------------------------------------------------
 Initial tree structure
 |-Subjects
  |-English

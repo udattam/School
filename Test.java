@@ -20,6 +20,27 @@ public class Test extends DigitalSchool {
         for (Teacher t : ds.teachers) {
             System.out.println(t.name);
         }
+        System.out.println("-------------------------------------------------------------------------------");
+        // Create students
+        Student s1 = ds.new Student("Student 1", "s1@gmail.com", "1234567890");
+        Student s2 = ds.new Student("Student 2", "s2@gmail.com", "2345678901");
+        Student s3 = ds.new Student("Student 3", "s3@gmail.com", "3456789012");
+        Student s4 = ds.new Student("Student 4", "s4@gmail.com", "4567890123");
+        Student s5 = ds.new Student("Student 5", "s5@gmail.com", "5678901234");
+        Student s6 = ds.new Student("Student 6", "s6@gmail.com", "6789012345");
+        // Add students to the list
+        ds.students.add(s1);
+        ds.students.add(s2);
+        ds.students.add(s3);
+        ds.students.add(s4);
+        ds.students.add(s5);
+        ds.students.add(s6);
+        // Print students
+        System.out.println("Students:");
+        for (Student s : ds.students) {
+            System.out.println(s.name + " " + s.email + " " + s.phone);
+        }
+        System.out.println("-------------------------------------------------------------------------------");
         // Create subjects
         t1.createSubject("English", ds.root);
         t1.createSubject("Physics", ds.root);
