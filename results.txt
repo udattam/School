@@ -1,0 +1,327 @@
+Teachers:
+Teacher 1
+Teacher 2
+Teacher 3
+Initial tree structure
+|-Subjects
+ |-English
+ |-Physics
+ |-Chemistry
+ |-Maths
+ |-Computer Science
+-------------------------------------------------------------------------------
+Tree structure after adding lessons
+|-Subjects
+ |-English
+  |-Lesson 1
+  |-Lesson 2
+  |-Lesson 3
+ |-Physics
+  |-Lesson 1
+  |-Lesson 2
+  |-Lesson 3
+ |-Chemistry
+  |-Lesson 1
+  |-Lesson 2
+  |-Lesson 3
+ |-Maths
+  |-Lesson 1
+  |-Lesson 2
+  |-Lesson 3
+ |-Computer Science
+  |-Lesson 1
+  |-Lesson 2
+  |-Lesson 3
+-------------------------------------------------------------------------------
+Tree structure after adding workbooks
+|-Subjects
+ |-English
+  |-Lesson 1
+   |-Workbook 1
+  |-Lesson 2
+   |-Workbook 1
+   |-Workbook 2
+  |-Lesson 3
+ |-Physics
+  |-Lesson 1
+   |-Workbook 1
+   |-Workbook 2
+  |-Lesson 2
+   |-Workbook 1
+  |-Lesson 3
+ |-Chemistry
+  |-Lesson 1
+  |-Lesson 2
+  |-Lesson 3
+   |-Workbook 1
+   |-Workbook 2
+   |-Workbook 3
+ |-Maths
+  |-Lesson 1
+   |-Workbook 1
+   |-Workbook 2
+   |-Workbook 3
+  |-Lesson 2
+  |-Lesson 3
+ |-Computer Science
+  |-Lesson 1
+  |-Lesson 2
+   |-Workbook 1
+   |-Workbook 2
+   |-Workbook 3
+  |-Lesson 3
+-------------------------------------------------------------------------------
+Tree structure after reordering subjects
+|-Subjects
+ |-Chemistry
+  |-Lesson 1
+  |-Lesson 2
+  |-Lesson 3
+   |-Workbook 1
+   |-Workbook 2
+   |-Workbook 3
+ |-Physics
+  |-Lesson 1
+   |-Workbook 1
+   |-Workbook 2
+  |-Lesson 2
+   |-Workbook 1
+  |-Lesson 3
+ |-English
+  |-Lesson 1
+   |-Workbook 1
+  |-Lesson 2
+   |-Workbook 1
+   |-Workbook 2
+  |-Lesson 3
+ |-Maths
+  |-Lesson 1
+   |-Workbook 1
+   |-Workbook 2
+   |-Workbook 3
+  |-Lesson 2
+  |-Lesson 3
+ |-Computer Science
+  |-Lesson 1
+  |-Lesson 2
+   |-Workbook 1
+   |-Workbook 2
+   |-Workbook 3
+  |-Lesson 3
+-------------------------------------------------------------------------------
+Tree structure after moving subjects
+|-Subjects
+ |-Semester 1
+  |-English
+   |-Lesson 1
+    |-Workbook 1
+   |-Lesson 2
+    |-Workbook 1
+    |-Workbook 2
+   |-Lesson 3
+  |-Physics
+   |-Lesson 1
+    |-Workbook 1
+    |-Workbook 2
+   |-Lesson 2
+    |-Workbook 1
+   |-Lesson 3
+  |-Chemistry
+   |-Lesson 1
+   |-Lesson 2
+   |-Lesson 3
+    |-Workbook 1
+    |-Workbook 2
+    |-Workbook 3
+ |-Semester 2
+  |-Maths
+   |-Lesson 1
+    |-Workbook 1
+    |-Workbook 2
+    |-Workbook 3
+   |-Lesson 2
+   |-Lesson 3
+  |-Computer Science
+   |-Lesson 1
+   |-Lesson 2
+    |-Workbook 1
+    |-Workbook 2
+    |-Workbook 3
+   |-Lesson 3
+-------------------------------------------------------------------------------
+Adding subjects to delete
+|-Subjects
+ |-Semester 1
+  |-English
+   |-Lesson 1
+    |-Workbook 1
+   |-Lesson 2
+    |-Workbook 1
+    |-Workbook 2
+   |-Lesson 3
+  |-Physics
+   |-Lesson 1
+    |-Workbook 1
+    |-Workbook 2
+   |-Lesson 2
+    |-Workbook 1
+   |-Lesson 3
+  |-Chemistry
+   |-Lesson 1
+   |-Lesson 2
+   |-Lesson 3
+    |-Workbook 1
+    |-Workbook 2
+    |-Workbook 3
+ |-Semester 2
+  |-Maths
+   |-Lesson 1
+    |-Workbook 1
+    |-Workbook 2
+    |-Workbook 3
+   |-Lesson 2
+   |-Lesson 3
+  |-Computer Science
+   |-Lesson 1
+   |-Lesson 2
+    |-Workbook 1
+    |-Workbook 2
+    |-Workbook 3
+   |-Lesson 3
+ |-Dummy 1
+ |-Dummy 2
+-------------------------------------------------------------------------------
+Tree structure after deleting subjects
+|-Subjects
+ |-Semester 1
+  |-English
+   |-Lesson 1
+    |-Workbook 1
+   |-Lesson 2
+    |-Workbook 1
+    |-Workbook 2
+   |-Lesson 3
+  |-Physics
+   |-Lesson 1
+    |-Workbook 1
+    |-Workbook 2
+   |-Lesson 2
+    |-Workbook 1
+   |-Lesson 3
+  |-Chemistry
+   |-Lesson 1
+   |-Lesson 2
+   |-Lesson 3
+    |-Workbook 1
+    |-Workbook 2
+    |-Workbook 3
+ |-Semester 2
+  |-Maths
+   |-Lesson 1
+    |-Workbook 1
+    |-Workbook 2
+    |-Workbook 3
+   |-Lesson 2
+   |-Lesson 3
+  |-Computer Science
+   |-Lesson 1
+   |-Lesson 2
+    |-Workbook 1
+    |-Workbook 2
+    |-Workbook 3
+   |-Lesson 3
+-------------------------------------------------------------------------------
+Actions
+ADD Dummy 1
+ADD Dummy 2
+DELETE Dummy 1
+DELETE Dummy 2
+-------------------------------------------------------------------------------
+Undo actions
+Tree structure after undoing actions
+|-Subjects
+ |-Semester 1
+  |-English
+   |-Lesson 1
+    |-Workbook 1
+   |-Lesson 2
+    |-Workbook 1
+    |-Workbook 2
+   |-Lesson 3
+  |-Physics
+   |-Lesson 1
+    |-Workbook 1
+    |-Workbook 2
+   |-Lesson 2
+    |-Workbook 1
+   |-Lesson 3
+  |-Chemistry
+   |-Lesson 1
+   |-Lesson 2
+   |-Lesson 3
+    |-Workbook 1
+    |-Workbook 2
+    |-Workbook 3
+ |-Semester 2
+  |-Maths
+   |-Lesson 1
+    |-Workbook 1
+    |-Workbook 2
+    |-Workbook 3
+   |-Lesson 2
+   |-Lesson 3
+  |-Computer Science
+   |-Lesson 1
+   |-Lesson 2
+    |-Workbook 1
+    |-Workbook 2
+    |-Workbook 3
+   |-Lesson 3
+ |-Dummy 1
+ |-Dummy 2
+-------------------------------------------------------------------------------
+Hashing every node
+Tree structure after hashing
+|-Subjects : 0$0
+ |-Semester 1 : 1$1
+  |-English : 2$3
+   |-Lesson 1 : 3$8
+    |-Workbook 1 : 4$23
+   |-Lesson 2 : 3$9
+    |-Workbook 1 : 4$24
+    |-Workbook 2 : 4$25
+   |-Lesson 3 : 3$10
+  |-Physics : 2$4
+   |-Lesson 1 : 3$11
+    |-Workbook 1 : 4$26
+    |-Workbook 2 : 4$27
+   |-Lesson 2 : 3$12
+    |-Workbook 1 : 4$28
+   |-Lesson 3 : 3$13
+  |-Chemistry : 2$5
+   |-Lesson 1 : 3$14
+   |-Lesson 2 : 3$15
+   |-Lesson 3 : 3$16
+    |-Workbook 1 : 4$29
+    |-Workbook 2 : 4$30
+    |-Workbook 3 : 4$31
+ |-Semester 2 : 1$2
+  |-Maths : 2$6
+   |-Lesson 1 : 3$17
+    |-Workbook 1 : 4$32
+    |-Workbook 2 : 4$33
+    |-Workbook 3 : 4$34
+   |-Lesson 2 : 3$18
+   |-Lesson 3 : 3$19
+  |-Computer Science : 2$7
+   |-Lesson 1 : 3$20
+   |-Lesson 2 : 3$21
+    |-Workbook 1 : 4$35
+    |-Workbook 2 : 4$36
+    |-Workbook 3 : 4$37
+   |-Lesson 3 : 3$22
+-------------------------------------------------------------------------------
+Root to node path
+Subjects -> Semester 2 -> Computer Science -> Lesson 2 -> Workbook 3
+-------------------------------------------------------------------------------
+Number of nodes: 38
