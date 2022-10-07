@@ -2,7 +2,7 @@ Teachers:
 Teacher 1
 Teacher 2
 Teacher 3
--------------------------------------------------------------------------------
+---------------------------------------
 Students:
 Student 1 s1@gmail.com 1234567890
 Student 2 s2@gmail.com 2345678901
@@ -10,7 +10,7 @@ Student 3 s3@gmail.com 3456789012
 Student 4 s4@gmail.com 4567890123
 Student 5 s5@gmail.com 5678901234
 Student 6 s6@gmail.com 6789012345
--------------------------------------------------------------------------------
+---------------------------------------
 Initial tree structure
 |-Subjects
  |-English
@@ -18,7 +18,7 @@ Initial tree structure
  |-Chemistry
  |-Maths
  |-Computer Science
--------------------------------------------------------------------------------
+---------------------------------------
 Tree structure after adding lessons
 |-Subjects
  |-English
@@ -41,7 +41,7 @@ Tree structure after adding lessons
   |-Lesson 1
   |-Lesson 2
   |-Lesson 3
--------------------------------------------------------------------------------
+---------------------------------------
 Tree structure after adding workbooks
 |-Subjects
  |-English
@@ -79,7 +79,7 @@ Tree structure after adding workbooks
    |-Workbook 2
    |-Workbook 3
   |-Lesson 3
--------------------------------------------------------------------------------
+---------------------------------------
 Tree structure after reordering subjects
 |-Subjects
  |-Chemistry
@@ -117,7 +117,7 @@ Tree structure after reordering subjects
    |-Workbook 2
    |-Workbook 3
   |-Lesson 3
--------------------------------------------------------------------------------
+---------------------------------------
 Tree structure after moving subjects
 |-Subjects
  |-Semester 1
@@ -157,7 +157,7 @@ Tree structure after moving subjects
     |-Workbook 2
     |-Workbook 3
    |-Lesson 3
--------------------------------------------------------------------------------
+---------------------------------------
 Adding subjects to delete
 |-Subjects
  |-Semester 1
@@ -199,7 +199,7 @@ Adding subjects to delete
    |-Lesson 3
  |-Dummy 1
  |-Dummy 2
--------------------------------------------------------------------------------
+---------------------------------------
 Tree structure after deleting subjects
 |-Subjects
  |-Semester 1
@@ -239,13 +239,13 @@ Tree structure after deleting subjects
     |-Workbook 2
     |-Workbook 3
    |-Lesson 3
--------------------------------------------------------------------------------
+---------------------------------------
 Actions
 ADD Dummy 1
 ADD Dummy 2
 DELETE Dummy 1
 DELETE Dummy 2
--------------------------------------------------------------------------------
+---------------------------------------
 Undo actions
 Tree structure after undoing actions
 |-Subjects
@@ -288,7 +288,7 @@ Tree structure after undoing actions
    |-Lesson 3
  |-Dummy 1
  |-Dummy 2
--------------------------------------------------------------------------------
+---------------------------------------
 Hashing every node
 Tree structure after hashing
 |-Subjects : 0$0
@@ -329,8 +329,8 @@ Tree structure after hashing
     |-Workbook 2 : 4$36
     |-Workbook 3 : 4$37
    |-Lesson 3 : 3$22
--------------------------------------------------------------------------------
+---------------------------------------
 Root to node path
 Subjects -> Semester 2 -> Computer Science -> Lesson 2 -> Workbook 3
--------------------------------------------------------------------------------
+---------------------------------------
 Number of nodes: 38

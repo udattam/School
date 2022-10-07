@@ -20,7 +20,7 @@ public class Test extends DigitalSchool {
         for (Teacher t : ds.teachers) {
             System.out.println(t.name);
         }
-        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------");
         // Create students
         Student s1 = ds.new Student("Student 1", "s1@gmail.com", "1234567890");
         Student s2 = ds.new Student("Student 2", "s2@gmail.com", "2345678901");
@@ -40,7 +40,7 @@ public class Test extends DigitalSchool {
         for (Student s : ds.students) {
             System.out.println(s.name + " " + s.email + " " + s.phone);
         }
-        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------");
         // Create subjects
         t1.createSubject("English", ds.root);
         t1.createSubject("Physics", ds.root);
@@ -50,7 +50,7 @@ public class Test extends DigitalSchool {
         // Print initial tree structure
         System.out.println("Initial tree structure");
         ds.root.print(0);
-        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------");
         // Add lessons
         t1.addLesson("Lesson 1", "English");
         t1.addLesson("Lesson 2", "English");
@@ -70,7 +70,7 @@ public class Test extends DigitalSchool {
         // Print tree structure after adding lessons
         System.out.println("Tree structure after adding lessons");
         ds.root.print(0);
-        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------");
         // Add workbooks
         t1.addWorkBook("Workbook 1", "English", "Lesson 1");
         t1.addWorkBook("Workbook 1", "English", "Lesson 2");
@@ -90,7 +90,7 @@ public class Test extends DigitalSchool {
         // Print tree structure after adding workbooks
         System.out.println("Tree structure after adding workbooks");
         ds.root.print(0);
-        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------");
         // Reorder subjects
         t1.reorderSubject("English", ds.root, 2);
         t1.reorderSubject("Physics", ds.root, 1);
@@ -100,7 +100,7 @@ public class Test extends DigitalSchool {
         // Print tree structure after reordering subjects
         System.out.println("Tree structure after reordering subjects");
         ds.root.print(0);
-        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------");
         // Move subjects
         t2.createSubject("Semester 1", ds.root);
         t2.createSubject("Semester 2", ds.root);
@@ -114,25 +114,25 @@ public class Test extends DigitalSchool {
         // Print tree structure after moving subjects
         System.out.println("Tree structure after moving subjects");
         ds.root.print(0);
-        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------");
         // Delete subjects
         System.out.println("Adding subjects to delete");
         t3.createSubject("Dummy 1", ds.root);
         t3.createSubject("Dummy 2", ds.root);
         ds.root.print(0);
-        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------");
         t3.deleteSubject("Dummy 1", ds.root);
         t3.deleteSubject("Dummy 2", ds.root);
         // Print tree structure after deleting subjects
         System.out.println("Tree structure after deleting subjects");
         ds.root.print(0);
-        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------");
         // Actions performed by last teacher
         System.out.println("Actions");
         for (Action action : t3.actions) {
             System.out.println(action.op + " " + action.text);
         }
-        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------");
         // Undo actions
         System.out.println("Undo actions");
         t3.undo();
@@ -140,7 +140,7 @@ public class Test extends DigitalSchool {
         // Print tree structure after undoing actions
         System.out.println("Tree structure after undoing actions");
         ds.root.print(0);
-        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------");
         t3.deleteSubject("Dummy 1", ds.root);
         t3.deleteSubject("Dummy 2", ds.root);
         // Hashing every node
@@ -149,11 +149,11 @@ public class Test extends DigitalSchool {
         // Print tree structure after hashing
         System.out.println("Tree structure after hashing");
         ds.root.print(0, true);
-        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------");
         // Print root to node path
         System.out.println("Root to node path");
         ds.root.printPath("4$37");
-        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("---------------------------------------");
         // Count number of nodes
         System.out.println("Number of nodes: " + ds.root.countChildren(ds.root));
     }
