@@ -1,6 +1,6 @@
 # School
 
-A basic file management system for schools.
+A basic file management system for schools written in Java.
 
 ## Table of Contents
 
