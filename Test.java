@@ -151,11 +151,14 @@ public class Test extends DigitalSchool {
         ds.root.print(0, true);
         System.out.println("---------------------------------------");
         // Print root to node path
-        System.out.println("Root to node path");
+        System.out.println("Root to node(4$37) path");
         ds.root.printPath("4$37");
         System.out.println("---------------------------------------");
         // Count number of nodes
         System.out.println("Number of nodes: " + ds.root.countChildren(ds.root));
+        System.out.println("---------------------------------------");
+        // End of tests
+        System.out.println("End of tests. Add more tests here in the Test.java file.");
     }
 
 }

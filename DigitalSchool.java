@@ -271,8 +271,8 @@ public class DigitalSchool {
                     // Add the subject to the list of children of the new root
                     newRoot.children.add(temp);
                     // Add the action to the list of actions (operation=MOVE,text=subject
-                    // name,index=old index,root=tree root,newRoot=new tree root)
-                    actions.add(new Action(Action.operation.MOVE, text, i, root, newRoot));
+                    // name,index=last child of new root,root=tree root,newRoot=new tree root)
+                    actions.add(new Action(Action.operation.MOVE, text, newRoot.children.size() - 1, root, newRoot));
                     return;
                 }
             }
